@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EntrePriseController!{% endblock %}
+
+{% block body %}
+<div class='container'>
+    <div class='alert'>
+        Nombre de PFE par entreprise
+    </div>
+    <div class='container entreprises-display'>
+        {% for entreprise in listentreprise %}
+            <div class='card text-white bg-primary mb-3' style='max-width: 18rem;min-width: 18rem;'>
+                <div class='card-header'>
+                    {{ entreprise }}
+                </div>
+                <div class='card-body'>
+                    <h5 class='card-title'>{{ entreprise|nombrePFE }} PFE(s)</h5>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

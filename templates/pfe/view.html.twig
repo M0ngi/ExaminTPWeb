@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PFEController!{% endblock %}
+
+{% block body %}
+    <div class='container mt-5'>
+       <div class='row'>
+            <div class='col'>
+                Nom etudiant
+            </div>
+            <div class='col'>
+                {{ pfe.NomEtudiant }}
+            </div>
+       </div>
+       <div class='row'>
+            <div class='col'>
+                Titre etudiant
+            </div>
+            <div class='col'>
+                {{ pfe.Titre }}
+            </div>
+       </div>
+       <div class='row'>
+            <div class='col'>
+                Entreprise
+            </div>
+            <div class='col'>
+                {{ pfe.entreprise }}
+            </div>
+       </div>
+    </div>
+{% endblock %}
